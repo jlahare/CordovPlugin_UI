@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="com.jayesh.jack" version="0.0.1">
+   
+   <name>Jack</name>
+   
+   <js-module name="Jack" src="www/Jack.js">
+      <clobbers target="cordova.plugins.Jack" />
+   </js-module>
+   
+   <platform name="ios">
+      <config-file parent="/*" target="config.xml">
+         <feature name="Jack">
+            <param name="ios-package" value="Jack" />
+         </feature>
+      </config-file>
+      
+      <source-file src="src/ios/Jack.m" />
+      <resource-file src="src/ios/ViewTest.xib" />
+
+   </platform>
+
+
+   <platform name="android">
+    
+    <framework custom="true" src="src/android/build.gradle" type="gradleReference" />
+
+      <config-file parent="/*" target="res/xml/config.xml">
+         <feature name="Jack">
+            <param name="android-package" value="com.jayesh.jack.Jack" />
+         </feature>
+      </config-file>
+      <config-file parent="/*" target="AndroidManifest.xml" />
+      <source-file src="src/android/Jack.java" target-dir="src/com/jayesh/jack/Jack" />
+
+    
+      <source-file src="src/android/NewActivity.java" target-dir="src/com/jayesh/jack/Jack" />
+      <source-file src="src/android/new_activity.xml" target-dir="res/layout" />
+      <config-file parent="/manifest/application" target="AndroidManifest.xml">
+         <activity android:name="com.jayesh.jack.NewActivity" />
+      </config-file>
+
+
+
+   </platform>
+
+</plugin>

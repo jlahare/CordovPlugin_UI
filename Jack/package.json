@@ -1,0 +1,17 @@
+{
+  "name": "jack",
+  "version": "0.0.1",
+  "description": "This plugin is another example of my creativity - Jayesh",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Jayesh",
+    "Jack",
+    "Vivaan",
+    "Lavanya"
+  ],
+  "author": "Jayesh Lahare",
+  "license": "ISC"
+}

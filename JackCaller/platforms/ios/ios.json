@@ -1,0 +1,43 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"Jack\"><param name=\"ios-package\" value=\"Jack\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.jack.caller"
+    },
+    "com.jayesh.jack": {
+      "PACKAGE_NAME": "com.jack.caller"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "com.jayesh.jack.Jack",
+      "file": "plugins/com.jayesh.jack/www/Jack.js",
+      "pluginId": "com.jayesh.jack",
+      "clobbers": [
+        "cordova.plugins.Jack"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-whitelist": "1.3.3",
+    "com.jayesh.jack": "0.0.1"
+  }
+}

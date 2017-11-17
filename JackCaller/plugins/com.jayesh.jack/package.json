@@ -1,0 +1,60 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/Users/macpc/plugins/Jack",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/Users/macpc/plugins/Jack",
+        "spec": "/Users/macpc/plugins/Jack",
+        "type": "directory"
+      },
+      "/Users/macpc/plugins/JackCaller"
+    ]
+  ],
+  "_from": "../Jack",
+  "_id": "jack@0.0.1",
+  "_inCache": true,
+  "_location": "/jack",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/Users/macpc/plugins/Jack",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/Users/macpc/plugins/Jack",
+    "spec": "/Users/macpc/plugins/Jack",
+    "type": "directory"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "file:../Jack",
+  "_shasum": "13aaaa2cb1a8279fec8ed7c52a4c4e8dd8193c3e",
+  "_shrinkwrap": null,
+  "_spec": "/Users/macpc/plugins/Jack",
+  "_where": "/Users/macpc/plugins/JackCaller",
+  "author": {
+    "name": "Jayesh Lahare"
+  },
+  "dependencies": {},
+  "description": "This plugin is another example of my creativity - Jayesh",
+  "devDependencies": {},
+  "keywords": [
+    "Jayesh",
+    "Jack",
+    "Vivaan",
+    "Lavanya"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "jack",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.1"
+}

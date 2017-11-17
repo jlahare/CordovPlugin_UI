@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:id="@+id/btnBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5px"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_dark"
+            android:padding="10px"
+            android:layout_weight="1"
+            android:text="Start Conversation"
+            android:layout_marginRight="5px"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnDisconnect"
+            android:layout_weight="1"
+            android:layout_marginLeft="5px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_light"
+            android:padding="10px"
+            android:text="Stop Conversation"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/btnBar"
+        android:background="@android:color/darker_gray">
+
+        <FrameLayout
+            android:id="@+id/subscriber_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/holo_blue_dark" />
+
+        <FrameLayout
+            android:id="@+id/publisher_container"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="bottom|end"
+            android:background="@android:color/holo_purple" />
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>
